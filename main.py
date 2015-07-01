@@ -17,9 +17,10 @@ app.config['SECRET_KEY'] = 'secret!'
 socketio = SocketIO(app)
 thread = None
 
+foo = ['neutral', 'hugging', 'notconnected', 'punching', 'shaking', 'spinning', 'throwing']
 
 def getRandomImageString():
-	return random.choice(['neutral', 'hugging', 'notconnected', 'punching', 'shaking', 'spinning', 'throwing'])
+	return random.choice(foo)
 
 
 def background_work():
